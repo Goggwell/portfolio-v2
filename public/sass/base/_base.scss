@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* rem definition, using px is bad for accessibility purposes */
+
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+}
+
+:root {
+    --color-primary: #{$color-primary};
+    --color-secondary: #{$color-secondary};
+    --color-tertiary: #{$color-tertiary};
+    --color-tertiary-music: #{$color-tertiary-music};
+    --color-tertiary-hex: #{$color-tertiary-hex};
+    --color-tertiary-invert: #{$color-tertiary-invert};
+
+    --color-grey-light: #{$color-grey-light};
+    --color-grey-light-2: #{$color-grey-light-2};
+    --color-grey-dark: #{$color-grey-dark};
+    --color-grey-dark-2: #{$color-grey-dark-2};
+    --color-grey-dark-3: #{$color-grey-dark-3};
+    --color-white: #{$color-white};
+    --color-black: #{$color-black};
+}
+
+::selection {
+    background-color: var(--color-grey-dark);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+}
+
+button {
+    border-width: 0;
+    border-style: none;
+}
+
+div {
+    display: block;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+
+// form autofill styling hack, avoids user agent stylesheet -internal-autofill-selected
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-grey-light);
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-primary) inset;
+  box-shadow: 0 0 0 1000px var(--color-primary) inset;
+  caret-color: var(--color-grey-light);
+}

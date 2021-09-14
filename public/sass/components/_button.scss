@@ -1,0 +1,15 @@
+.button {
+    margin-top: 5rem;
+    border: 1px solid var(--color-tertiary);
+    padding: 1.5rem 2rem;
+    width: 25rem;
+    text-align: center;
+    border-radius: .4rem;
+    cursor: pointer;
+    transition: all .4s;
+    font-family: 'JetBrains Mono', monospace;
+
+    &:hover {
+        background-color: rgba($color-tertiary-hex, .2);
+    }
+}

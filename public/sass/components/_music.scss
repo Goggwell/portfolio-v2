@@ -1,0 +1,62 @@
+.music {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    &__title {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 400;
+        font-size: 1.4rem;
+        padding: 1.4rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        background: var(--color-primary);
+        border-radius: .4rem;
+
+        &--seek {
+            background: linear-gradient(to right, var(--color-tertiary) 0%, var(--color-primary) 0%);
+        }
+    }
+
+    &__player {
+        position: relative;
+        min-height: 10rem;
+        border: 2px solid var(--color-tertiary-music);
+        box-shadow: 0 1rem 3rem -1.5rem var(--color-grey-dark-2);
+        border-radius: .4rem;
+        padding: 2rem 3rem;
+
+        &__btns {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            & span {
+                position: relative;
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--grey-dark-2);
+                cursor: pointer;
+                transition: all .22s cubic-bezier(0.79,0.14,0.15,0.86);
+
+                & svg {
+                    width: 2rem;
+                    height: 2rem;
+                }
+
+                &:active, &:hover, &:focus {
+                    color: var(--color-tertiary);
+                }
+            }
+        }
+    }
+}

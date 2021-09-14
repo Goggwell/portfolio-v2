@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Yusuf">
+    <meta name="description" content="My Portfolio ver. 2.0">
+    <meta name="keywords" content="Goggwell, Gogg, Samuel, Samuel Yusuf, Portfolio, Developer, Full Stack Developer">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Portfolio 2.0</title>
+</head>
+
+<body id="body" class="body">
+    <div id="noBlur" class="navigation">
+        <nav>
+            <div class="navigation__logo" tabindex="-1">
+                <a href="#" aria-label="home">
+                    <i data-feather="code"></i>
+                </a>
+            </div>
+            <div class="navigation__links">
+                <ol>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#extras">Extras</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ol>
+                <div>
+                    <button id="themeToggle" class="navigation__links__button">Dark</button>
+                </div>
+            </div>
+            <div id="navMenu" class="navigation__menu">
+                <div>
+                    <button aria-label="menu" id="navButton" class="navigation__menu__button">
+                        <div id="navButtonHam" class="navigation__menu__button--ham">
+                            <div id="navButtonHamInner" class="navigation__menu__button--ham--inner"></div>
+                        </div>
+                    </button>
+                    <aside aria-hidden="true" tabindex="0" id="navContent" class="navigation__menu__content">
+                        <nav>
+                            <ol>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#extras">Extras</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ol>
+                            <a href="#" id="navContentButton" class="navigation__menu__content__button">Dark</a>
+                        </nav>
+                    </aside>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="sidebar--left">
+        <ul class="sidebar--left__social">
+            <li>
+                <a href="https://github.com/goggwell" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                    <i class="feather--20" data-feather="github"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://samuelyusuf-280b5.firebaseapp.com" aria-label="Portfolio v1" target="_blank" rel="noopener noreferrer">
+                    <i class="feather--20" data-feather="layout"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/in/samuel-yusuf-sy29071999/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                    <i class="feather--20" data-feather="linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://codepen.io/Goggwell" aria-label="Codepen" target="_blank" rel="noopener noreferrer">
+                    <i class="feather--20" data-feather="codepen"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar--right">
+        <div class="sidebar--right__email">
+            <a href="mailto:zulkarnaensamuel1@gmail.com" target="_blank" rel="noopener noreferrer">zulkarnaensamuel1@gmail.com</a>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__head">
+            <code class="u-margin-bottom-small">Hi, my name is</code>
+            <h1 class="u-margin-bottom-small">Samuel Yusuf.</h1>
+            <h2 class="u-margin-bottom-medium">I build and design web applications.</h2>
+            <p>
+                I'm a full stack developer, specializing in building and designing web
+                applications for every day use. In my spare time, I love working on
+                side projects to broaden my knowledge, as well as making music and playing games!
+            </p>
+            <div class="button">
+                <a href="./resume.pdf" target="_blank" rel="noopener noreferrer">Download my resume</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section__about">
+            <h2 class="section__about__heading">
+                About Me
+            </h2>
+            <div class="section__about__content">
+                <div class="section__about__content__text">
+                    <div>
+                        <p>Hello there! I'm Samuel, self-taught full stack developer and programming enthusiast! I've been interested in web applications and technologies ever since I was in middle school (circa 2013).</p>
+                        <p>Ever since my early beginnings with HTML and CSS, I've been in love with learning new programming languages, libraries, and frameworks to assist with web development.</p>
+                        <p>These are the technologies I currently build with:</p>
+                    </div>
+                    <ul class="section__about__content__text--list">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>Sass</li>
+                        <li>Python</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <div>
+                        <p>And here are the ones I am currently studying:</p>
+                    </div>
+                    <ul class="section__about__content__text--list">
+                        <li>Gatsby</li>
+                        <li>Express</li>
+                        <li>GraphQL</li>
+                        <li>MySQL</li>
+                        <li>PHP</li>
+                        <li>Next.js</li>
+                        <li>Electron</li>
+                    </ul>
+                </div>
+                <div class="section__about__content__icons">
+                    <ul class="section__about__content__icons--list">
+                        <li>
+                            <i class="devicon-javascript-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">JavaScript</div>
+                        </li>
+                        <li>
+                            <i class="devicon-react-original colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">React</div>
+                        </li>
+                        <li>
+                            <i class="devicon-nodejs-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">Node.js</div>
+                        </li>
+                        <li>
+                            <i class="devicon-sass-original colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">Sass</div>
+                        </li>
+                        <li>
+                            <i class="devicon-python-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">Python</div>
+                        </li>
+                        <li>
+                            <i class="devicon-mongodb-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">MongoDB</div>
+                        </li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <br>
+                    <ul class="section__about__content__icons--list">
+                        <li>
+                            <i class="devicon-gatsby-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">Gatsby</div>
+                        </li>
+                        <li>
+                            <i class="devicon-express-original colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">Express</div>
+                        </li>
+                        <li>
+                            <i class="devicon-graphql-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">GraphQL</div>
+                        </li>
+                        <li>
+                            <i class="devicon-mysql-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">MySQL</div>
+                        </li>
+                        <li>
+                            <i class="devicon-php-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">PHP</div>
+                        </li>
+                        <li>
+                            <i class="devicon-nextjs-plain colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">Next.js</div>
+                        </li>
+                        <li>
+                            <i class="devicon-electron-original colorHoverIcon"></i>
+                            <div class="section__about__content__icons--list--name">Electron</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section__projects">
+            <h2 class="section__projects__heading">
+                My Projects
+            </h2>
+            <ul class="section__projects__list">
+                <li class="section__projects__list--item">
+                    <div class="section__projects__list--item__content">
+                        <div>
+                            <p class="section__projects__list--item__content--overline">
+                                Featured Project
+                            </p>
+                            <h3 class="section__projects__list--item__content--title">
+                                <a href="https://goggwell.github.io/minidex" rel="noopener noreferrer" target="_blank">Minidex</a>
+                            </h3>
+                            <div class="section__projects__list--item__content--description">
+                                <p>A miniature Pokedex web app. Search for 800+ Pokemon, along with their stats and details.</p>
+                            </div>
+                            <ul class="section__projects__list--item__content--tech-list">
+                                <li>JavaScript</li>
+                                <li>PokeAPI</li>
+                                <li>Sass</li>
+                                <li>GitHub Pages</li>
+                            </ul>
+                            <div class="section__projects__list--item__content--links">
+                                <a href="https://github.com/goggwell/minidex" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                    <i data-feather="github"></i>
+                                </a>
+                                <a href="https://goggwell.github.io/minidex" rel="noopener noreferrer" target="_blank">
+                                    <i data-feather="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__projects__list--item__image">
+                        <a href="https://goggwell.github.io/minidex" rel="noopener noreferrer" target="_blank">
+                            <div class="section__projects__list--item__image--wrapper">
+                                <img src="img/minidex.jpg" alt="Minidex">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="section__projects__list--item">
+                    <div class="section__projects__list--item__content">
+                        <div>
+                            <p class="section__projects__list--item__content--overline">
+                                Featured Project
+                            </p>
+                            <h3 class="section__projects__list--item__content--title">
+                                <a href="https://cordcatenate.web.app" rel="noopener noreferrer" target="_blank">cordcatenate.</a>
+                            </h3>
+                            <div class="section__projects__list--item__content--description">
+                                <p>A chat application/IM application that allows you to connect with people globally. Create new chat groups, add people to them, and send texts, photos, or attachments! Built with <a href="https://chatengine.io" rel="noopener noreferrer" target="_blank">ChatEngine.io</a></p>
+                            </div>
+                            <ul class="section__projects__list--item__content--tech-list">
+                                <li>React + Context</li>
+                                <li>ChatEngine.io</li>
+                                <li>Firebase</li>
+                                <li>REST API</li>
+                            </ul>
+                            <div class="section__projects__list--item__content--links">
+                                <a href="https://github.com/goggwell/cordcatenate" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                    <i data-feather="github"></i>
+                                </a>
+                                <a href="https://cordcatenate.web.app" rel="noopener noreferrer" target="_blank">
+                                    <i data-feather="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__projects__list--item__image">
+                        <a href="https://cordcatenate.web.app" rel="noopener noreferrer" target="_blank">
+                            <div class="section__projects__list--item__image--wrapper">
+                                <img src="img/cordcatenate.jpg" alt="cordcatenate">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="section__projects__list--item">
+                    <div class="section__projects__list--item__content">
+                        <div>
+                            <p class="section__projects__list--item__content--overline">
+                                Featured Project
+                            </p>
+                            <h3 class="section__projects__list--item__content--title">
+                                <a href="https://stackclone-bfbc3.web.app" rel="noopener noreferrer" target="_blank">Stacker</a>
+                            </h3>
+                            <div class="section__projects__list--item__content--description">
+                                <p>A clone of the popular game Stack, built for the web. Use the spacebar or click/tap to stack as many blocks as you can! Background music was also made by me in FL Studio.</p>
+                            </div>
+                            <ul class="section__projects__list--item__content--tech-list">
+                                <li>JavaScript</li>
+                                <li>GSAP</li>
+                                <li>Three.js</li>
+                                <li>Firebase</li>
+                                <li>FL Studio</li>
+                            </ul>
+                            <div class="section__projects__list--item__content--links">
+                                <a href="https://github.com/goggwell/stack-clone" aria-label="GitHub Link" rel="noopener noreferrer" target="_blank">
+                                    <i data-feather="github"></i>
+                                </a>
+                                <a href="https://stackclone-bfbc3.web.app" rel="noopener noreferrer" target="_blank">
+                                    <i data-feather="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__projects__list--item__image">
+                        <a href="https://stackclone-bfbc3.web.app" rel="noopener noreferrer" target="_blank">
+                            <div class="section__projects__list--item__image--wrapper">
+                                <img src="img/stacker.jpg" alt="stacker">
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="section__more-projects">
+            <h2>More Projects</h2>
+            <ul class="section__more-projects__grid">
+                <li class="section__more-projects__grid--item">
+                    <div class="section__more-projects__grid--item--project">
+                        <div>
+                            <div class="section__more-projects__grid--item--project--top">
+                                <div class="section__more-projects__grid--item--project--top--folder">
+                                    <i data-feather="folder"></i>
+                                </div>
+                                <div class="section__more-projects__grid--item--project--top--links">
+                                    <a href="https://samuelyusuf-280b5.firebaseapp.com" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="section__more-projects__grid--item--project--title">
+                                <a href="https://samuelyusuf-280b5.firebaseapp.com" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                    Portfolio v1
+                                </a>
+                            </h3>
+                            <div class="section__more-projects__grid--item--project--description">
+                                <p>
+                                    First iteration of my portfolio website. Designed with a retro, cyberpunk aesthetic in mind. Still regularly updating.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="section__more-projects__grid--item--project--tech-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="section__more-projects__grid--item">
+                    <div class="section__more-projects__grid--item--project">
+                        <div>
+                            <div class="section__more-projects__grid--item--project--top">
+                                <div class="section__more-projects__grid--item--project--top--folder">
+                                    <i data-feather="folder"></i>
+                                </div>
+                                <div class="section__more-projects__grid--item--project--top--links">
+                                    <a href="https://github.com/Goggwell/30-Days-Of-Code" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="github"></i>
+                                    </a>
+                                    <a href="https://www.hackerrank.com/goggwell?hr_r=1" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="section__more-projects__grid--item--project--title">
+                                <a href="https://github.com/Goggwell/30-Days-Of-Code" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                    HackerRank's 30 Days of Code (in C++)
+                                </a>
+                            </h3>
+                            <div class="section__more-projects__grid--item--project--description">
+                                <p>
+                                    The 30 Days of Code challenge on the HackerRank platform. Write solutions to common 'Data Structures and Algorithms' problems.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="section__more-projects__grid--item--project--tech-list">
+                                <li>C++</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="section__more-projects__grid--item">
+                    <div class="section__more-projects__grid--item--project">
+                        <div>
+                            <div class="section__more-projects__grid--item--project--top">
+                                <div class="section__more-projects__grid--item--project--top--folder">
+                                    <i data-feather="folder"></i>
+                                </div>
+                                <div class="section__more-projects__grid--item--project--top--links">
+                                    <a href="https://github.com/Goggwell/minidex-lite" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="github"></i>
+                                    </a>
+                                    <a href="https://codepen.io/Goggwell/pen/ExXKwEp" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="codepen"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="section__more-projects__grid--item--project--title">
+                                <a href="https://codepen.io/Goggwell/pen/ExXKwEp" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                    Minidex-Lite
+                                </a>
+                            </h3>
+                            <div class="section__more-projects__grid--item--project--description">
+                                <p>
+                                    Pocket-sized version of Minidex. Search for 800+ Pokemon and get basic information.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="section__more-projects__grid--item--project--tech-list">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PokeAPI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="section__more-projects__grid--item">
+                    <div class="section__more-projects__grid--item--project">
+                        <div>
+                            <div class="section__more-projects__grid--item--project--top">
+                                <div class="section__more-projects__grid--item--project--top--folder">
+                                    <i data-feather="folder"></i>
+                                </div>
+                                <div class="section__more-projects__grid--item--project--top--links">
+                                    <a href="https://replit.com/@Goggwell/testbot" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="external-link"></i>
+                                    </a>
+                                    <a href="https://replit.com/@Goggwell/testbotdos" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="section__more-projects__grid--item--project--title">
+                                <a href="https://replit.com/@Goggwell/testbotdos" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                    Making a Discord Bot
+                                </a>
+                            </h3>
+                            <div class="section__more-projects__grid--item--project--description">
+                                <p>
+                                    I created 2 Discord Bots in Python as a fun side project. First link is the code for censoring swear words. Second link is the main code for the second discord bot, Test-Bot Dos.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="section__more-projects__grid--item--project--tech-list">
+                                <li>Python</li>
+                                <li>MongoDB</li>
+                                <li>Flask</li>
+                                <li>Discord.py</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="section__more-projects__grid--item">
+                    <div class="section__more-projects__grid--item--project">
+                        <div>
+                            <div class="section__more-projects__grid--item--project--top">
+                                <div class="section__more-projects__grid--item--project--top--folder">
+                                    <i data-feather="folder"></i>
+                                </div>
+                                <div class="section__more-projects__grid--item--project--top--links">
+                                    <a href="https://slackcord.web.app" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                        <i data-feather="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 class="section__more-projects__grid--item--project--title">
+                                <a href="https://slackcord.web.app" aria-label="External Link" target="_blank" rel="noopener noreferrer">
+                                    SlackCord
+                                </a>
+                            </h3>
+                            <div class="section__more-projects__grid--item--project--description">
+                                <p>
+                                    My first messaging app, inspired by <a href="https://www.youtube.com/watch?v=2-LISBTczQE" rel="noopener noreferrer" target="_blank">AlterClass</a>. Functionality not working anymore (Database locked).
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="section__more-projects__grid--item--project--tech-list">
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>Tailwind</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="extras" class="section__extras">
+            <h2 class="section__extras__heading">
+                Some Extras
+            </h2>
+            <div class="section__extras__content">
+                <div role="tablist" aria-label="Miscellaneous tabs" class="section__extras__content__tab-list">
+                    <button id="tab-0" role="tab" tabindex="0" aria-selected="true" aria-controls="panel-0" class="section__extras__content__tab-list__button">
+                        <span>Graphic Design</span>
+                    </button>
+                    <button id="tab-1" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-1" class="section__extras__content__tab-list__button">
+                        <span>Music</span>
+                    </button>
+                    <button id="tab-2" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-2" class="section__extras__content__tab-list__button">
+                        <span>Others</span>
+                    </button>
+                </div>
+                <div class="section__extras__content__display">
+                    <div id="panel-0" role="tabpanel" tabindex="0" aria-labelledby="tab-0" aria-hidden="false" class="section__extras__content__display--panel panel-active">
+                        <h3>
+                            Graphic Design
+                        </h3>
+                        <p class="section__extras__content__display--panel--sub">
+                            Skills as a graphic designer
+                        </p>
+                        <div>
+                            <ul>
+                                <li>I have experience as a UI/UX designer, as well as a regular graphic designer.</li>
+                                <li>I am proficient with Adobe Photoshop, as well as Illustrator.</li>
+                                <li>I've also edited some videos with Adobe Premiere Pro.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="panel-1" role="tabpanel" tabindex="-1" aria-labelledby="tab-1" aria-hidden="true" class="section__extras__content__display--panel">
+                        <h3>
+                            Producer
+                        </h3>
+                        <p class="section__extras__content__display--panel--sub">
+                            Some of my works as an FL Studio Producer
+                        </p>
+                        <div>
+                            <ul>
+                                <li>I picked up music production as a hobby while studying in Melbourne.</li>
+                                <li>Listen to some of my work below (NOTE: some of them are still a WIP, and the majority of them are only snippets rather than fully fleshed out ideas):</li>
+                                <div class="music">
+                                    <div class="music__player">
+                                        <h2 class="music__title music__title--seek">
+                                            Music Name
+                                        </h2>
+                                        <audio src=""></audio>
+                                        <div class="music__player__btns">
+                                            <span class="music__player__btns--prev">
+                                                <i data-feather="skip-back"></i>
+                                            </span>
+                                            <span class="music__player__btns--playPause">
+                                                <i data-feather="play"></i>
+                                            </span>
+                                            <span class="music__player__btns--next">
+                                                <i data-feather="skip-forward"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li>NOTE: Music player has limited functionality so as to not take up a large portion of this section. A bigger version can be found in my <a href="https://samuelyusuf-280b5.firebaseapp.com" target="_blank" rel="noopener noreferrer">old portfolio</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="panel-2" role="tabpanel" tabindex="-1" aria-labelledby="tab-2" aria-hidden="true" class="section__extras__content__display--panel">
+                        <h3>
+                            Other Miscellaneous Things
+                        </h3>
+                        <p class="section__extras__content__display--panel--sub">
+                            Some small tidbits about me
+                        </p>
+                        <div>
+                            <ul>
+                                <li>I reverse engineered iOS applications using <a href="https://hex-rays.com/ida-pro/" rel="noopener noreferrer" target="_blank">IDA</a> and MobileSubstrate back in high school, with Objective-C and C++ implementation.</li>
+                                <li>I'm a big C++ aficionado.</li>
+                                <li>I've created several pens over on <a href="https://codepen.io/Goggwell" rel="noopener noreferrer" target="_blank">CodePen</a> for your viewing pleasure.</li>
+                                <li><a href="https://code.visualstudio.com" rel="noopener noreferrer" target="_blank">VSCode</a> is my text editor of choice, but I have also used <a href="https://atom.io" rel="noopener noreferrer" target="_blank">Atom</a> and <a href="https://www.sublimetext.com" rel="noopener noreferrer" target="_blank">Sublime Text</a>.</li>
+                                <li style="margin-left: 2em; padding-bottom: 0;">My favorite VSCode theme is <a href="https://vscodethemes.com/e/VictoriaDrake.kabukicho" rel="noopener noreferrer" target="_blank">Kabukicho</a> by Victoria Drake.</li>
+                                <li>I was formerly the Rank 1 Hyper Roll player for Teamfight Tactics in the OCE Region (check me out <a href="https://lolchess.gg/profile/oce/Goggwell" rel="noopener noreferrer" target="_blank">here</a>).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section__contact">
+            <h2 class="section__contact__heading section__contact__heading--overline">
+                Want to work together?
+            </h2>
+            <h2 class="section__contact__title">
+                Contact Me
+            </h2>
+            <p>
+                Use the contact form below to send me a message! My inbox is always open if you want to collaborate, work, or just talk about development in general!
+            </p>
+            <div class="form-wrapper">
+                <form method="POST" action="send" enctype="multipart/form-data" class="form">
+                    <input type="text" name="name" id="name" placeholder="Full Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="message" id="message" cols="30" rows="3" placeholder="Write your message..." required></textarea>
+                    <input type="submit" class="form--submit" value="Send">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__links">
+            <ul>
+                <li>
+                    <a href="https://github.com/goggwell" rel="noopener noreferrer" target="_blank">
+                        <i data-feather="github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://samuelyusuf-280b5.firebaseapp.com" rel="noopener noreferrer" target="_blank">
+                        <i data-feather="layout"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/samuel-yusuf-sy29071999/" rel="noopener noreferrer" target="_blank">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://codepen.io/Goggwell" rel="noopener noreferrer" target="_blank">
+                        <i data-feather="codepen"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__credits">
+            <a href="https://github.com/goggwell" rel="noopener noreferrer" target="_blank">
+                <div>Made with <i data-feather="heart"></i> by Samuel Yusuf</div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        feather.replace() //for feather icons
+    </script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>

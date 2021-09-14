@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Calibre";
+    src: url('../../vendor/fonts/Calibre-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url('../../vendor/fonts/Calibre-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url('../../vendor/fonts/Calibre-Semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+body {
+    font-family: "Calibre", sans-serif;
+    font-size: $default-font-size;
+    color: var(--color-grey-light);
+    -webkit-font-smoothing: antialiased;
+}
+
+code {
+    font-family: "JetBrains Mono", monospace;
+    font-size: $default-font-size;
+    color: var(--color-grey-light);
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all .2s;
+
+    &:hover {
+        color: var(--color-tertiary);
+    }
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+.feather {
+    &--16 {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    &--18 {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    &--20 {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &--30 {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+hr {
+    width: 2rem;
+    height: 1px;
+    margin: 3rem 14.5rem;
+    background-color: var(--color-grey-dark-3);
+    border: none;
+}
